@@ -1,0 +1,372 @@
+text,label
+headache,1
+migraine,1
+anxiety,1
+panic attack,1
+overwhelmed,1
+exhausted,1
+burnout,1
+depressed,1
+depression,1
+hopeless,1
+crying,1
+can't sleep,1
+insomnia,1
+worried,1
+fear,1
+scared,1
+nervous,1
+stressed,1
+stress,1
+tension,1
+pressure,1
+frustration,1
+frustrated,1
+angry,1
+anger,1
+irritated,1
+irritable,1
+lonely,1
+loneliness,1
+hopelessness,1
+helpless,1
+worthless,1
+nausea,1
+chest pain,1
+heart racing,1
+palpitations,1
+sweating,1
+trembling,1
+shaking,1
+dizzy,1
+dizziness,1
+fatigued,1
+fatigue,1
+tired all the time,1
+no energy,1
+low energy,1
+body aches,1
+muscle tension,1
+back pain,1
+neck pain,1
+stomach ache,1
+upset stomach,1
+appetite loss,1
+not eating,1
+overeating,1
+binge eating,1
+panic,1
+dread,1
+doom,1
+mental breakdown,1
+crying all day,1
+can't focus,1
+can't concentrate,1
+memory problems,1
+forgetful,1
+confusion,1
+confused,1
+overwhelmed with work,1
+too much work,1
+work stress,1
+deadline,1
+pressure at work,1
+job stress,1
+financial stress,1
+money problems,1
+debt,1
+relationship problems,1
+breakup,1
+divorce,1
+grief,1
+loss,1
+trauma,1
+abuse,1
+nightmare,1
+nightmares,1
+dark thoughts,1
+suicidal,1
+self harm,1
+hurt myself,1
+no motivation,1
+lost interest,1
+nothing matters,1
+feel empty,1
+feel numb,1
+feeling hopeless,1
+feeling useless,1
+feel like giving up,1
+I give up,1
+can't handle it,1
+too much pressure,1
+failing,1
+failure,1
+I am a failure,1
+everything is falling apart,1
+I hate my life,1
+I can't do this,1
+I feel terrible,1
+I feel awful,1
+I am so stressed,1
+I can't breathe,1
+panic attacks,1
+anxiety attacks,1
+I'm breaking down,1
+mental health issues,1
+having a bad day,1
+things are getting worse,1
+I feel sick,1
+I don't feel well,1
+I feel dizzy,1
+I have a headache,1
+my head hurts,1
+I'm so tired,1
+so much stress,1
+struggling,1
+feeling down,1
+feeling low,1
+bad mood,1
+mood swings,1
+emotional,1
+crying without reason,1
+I feel sad,1
+I feel horrible,1
+going through hard times,1
+overwhelmed by everything,1
+feeling trapped,1
+feeling stuck,1
+feeling lost,1
+no hope,1
+I am not okay,1
+not okay,1
+life is hard,1
+difficult time,1
+hard time,1
+suffering,1
+in pain,1
+mental exhaustion,1
+emotional exhaustion,1
+I am so done,1
+I feel broken,1
+I'm falling apart,1
+sleep problems,1
+wake up tired,1
+restless,1
+restlessness,1
+worry,1
+constant worry,1
+overthinking,1
+overthink,1
+racing thoughts,1
+negative thoughts,1
+hate my job,1
+hate my life,1
+feel unwell,1
+unwell,1
+sick,1
+feel sick,1
+dizzy spells,1
+lightheaded,1
+burnout at work,1
+I am exhausted,1
+I feel exhausted,1
+so overwhelmed,1
+I'm overwhelmed,1
+panic mode,1
+having a hard time,1
+emotional breakdown,1
+everything is too much,1
+I'm not sleeping,1
+can't relax,1
+can't calm down,1
+tension headache,1
+pressure headache,1
+feeling anxious,1
+anxious,1
+having anxiety,1
+social anxiety,1
+phobia,1
+irrational fear,1
+feel unsafe,1
+not safe,1
+bad dreams,1
+woke up scared,1
+can't get out of bed,1
+no interest in anything,1
+lost all hope,1
+mentally drained,1
+physically drained,1
+completely drained,1
+crying myself to sleep,1
+heart is heavy,1
+heavy heart,1
+burdened,1
+problem,1
+problem with work,1
+I have a problem,1
+I am struggling,1
+things are hard,1
+going through a lot,1
+a lot on my plate,1
+too much on my plate,1
+feeling rushed,1
+feel rushed,1
+last minute,1
+everything at once,1
+doing too much,1
+no time for myself,1
+burnt out,1
+feel burnt out,1
+I feel burnt out,1
+I'm burnt out,1
+everything hurts,1
+my body hurts,1
+I'm in pain,1
+feeling pain,1
+fever,1
+ill,1
+sick and tired,1
+so tired,1
+very tired,1
+extremely tired,1
+extreme fatigue,1
+chronic fatigue,1
+chronic pain,1
+health anxiety,1
+worried about health,1
+health problems,1
+feeling great,0
+happy,0
+joyful,0
+excited,0
+enjoying life,0
+feeling good,0
+feeling well,0
+I am fine,0
+doing well,0
+having fun,0
+laughing,0
+smiling,0
+great day,0
+wonderful day,0
+relaxed,0
+calm,0
+peaceful,0
+at peace,0
+motivated,0
+energetic,0
+full of energy,0
+feeling refreshed,0
+refreshed,0
+well rested,0
+slept well,0
+good sleep,0
+feeling healthy,0
+in good shape,0
+fit and healthy,0
+optimistic,0
+hopeful,0
+positive,0
+positive vibes,0
+good mood,0
+in a good mood,0
+love my life,0
+life is good,0
+life is wonderful,0
+grateful,0
+thankful,0
+blessed,0
+content,0
+satisfied,0
+fulfilled,0
+accomplished,0
+proud,0
+feeling proud,0
+achieved my goal,0
+reached my goal,0
+things are going well,0
+everything is okay,0
+all good,0
+no problems,0
+no worries,0
+worry free,0
+stress free,0
+nothing to worry about,0
+having a great day,0
+feeling amazing,0
+amazing,0
+fantastic,0
+wonderful,0
+excellent,0
+doing great,0
+everything is fine,0
+I am okay,0
+I am good,0
+perfectly fine,0
+never better,0
+best day ever,0
+feeling on top of the world,0
+on top of the world,0
+life couldn't be better,0
+feeling confident,0
+confident,0
+self assured,0
+in control,0
+feel in control,0
+balanced,0
+feeling balanced,0
+harmony,0
+in harmony,0
+mind is clear,0
+clear mind,0
+no stress,0
+not stressed,0
+feeling stable,0
+emotionally stable,0
+stable,0
+not anxious,0
+not worried,0
+not overwhelmed,0
+at ease,0
+feeling safe,0
+safe and sound,0
+secure,0
+feeling secure,0
+comfortable,0
+cozy,0
+warm and happy,0
+loved,0
+feeling loved,0
+supported,0
+feeling supported,0
+surrounded by good people,0
+good friends,0
+good family,0
+enjoying time with family,0
+enjoying time with friends,0
+social and happy,0
+connected,0
+feeling connected,0
+living my best life,0
+best life,0
+full of life,0
+vibrant,0
+feeling vibrant,0
+glowing,0
+feeling glowing,0
+cheerful,0
+in high spirits,0
+high spirits,0
+upbeat,0
+feeling upbeat,0
+jolly,0
+merry,0
+feeling free,0
+free,0
+liberated,0
+no burdens,0
+light hearted,0
+lighthearted,0
+no pressure,0
+no tension,0
+tension free,0

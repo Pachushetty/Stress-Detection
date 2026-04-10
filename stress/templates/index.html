@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Predictor</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #1a1a2e;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 4px;
+            border: 1px solid #d0d5dd;
+            padding: 40px 48px;
+            width: 100%;
+            max-width: 560px;
+        }
+        .header {
+            border-bottom: 2px solid #1a1a2e;
+            padding-bottom: 16px;
+            margin-bottom: 28px;
+        }
+        h1 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #1a1a2e;
+        }
+        .subtitle {
+            font-size: 0.85rem;
+            color: #667085;
+            margin-top: 4px;
+        }
+        label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #344054;
+            margin-bottom: 6px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #d0d5dd;
+            border-radius: 3px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            resize: vertical;
+            color: #1a1a2e;
+            background: #fcfcfd;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        textarea:focus {
+            border-color: #1a1a2e;
+            background: #ffffff;
+        }
+        .examples {
+            margin: 8px 0 20px;
+            font-size: 0.78rem;
+            color: #98a2b3;
+        }
+        .examples strong {
+            color: #667085;
+        }
+        .tag {
+            display: inline-block;
+            border: 1px solid #d0d5dd;
+            border-radius: 2px;
+            padding: 2px 8px;
+            margin: 2px 2px 2px 0;
+            font-size: 0.78rem;
+            cursor: pointer;
+            color: #344054;
+            background: #f9fafb;
+            transition: background 0.15s;
+        }
+        .tag:hover { background: #e9ecf0; }
+        button {
+            width: 100%;
+            padding: 11px;
+            background: #1a1a2e;
+            color: #ffffff;
+            border: none;
+            border-radius: 3px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 4px;
+        }
+        button:hover { background: #2d2d4e; }
+        .result {
+            margin-top: 24px;
+            padding: 14px 18px;
+            border-radius: 3px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .result.stress {
+            background: #fef3f2;
+            color: #b42318;
+            border-left: 4px solid #d92d20;
+        }
+        .result.no-stress {
+            background: #f6fef9;
+            color: #027a48;
+            border-left: 4px solid #039855;
+        }
+        .result-icon {
+            font-size: 1rem;
+        }
+        .divider {
+            border: none;
+            border-top: 1px solid #eaecf0;
+            margin: 24px 0 0;
+        }
+        .footer-note {
+            margin-top: 12px;
+            font-size: 0.75rem;
+            color: #98a2b3;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="header">
+        <h1>Stress Predictor</h1>
+        <p class="subtitle">Describe how you are feeling to receive an instant analysis.</p>
+    </div>
+
+    <form action="/predict" method="post">
+        <label for="message">Current State</label>
+        <textarea id="message" name="message" rows="4"
+                  placeholder="e.g. headache, I feel anxious, I'm exhausted..."></textarea>
+
+        <div class="examples">
+            <strong>Quick input:</strong><br>
+            <span class="tag" onclick="fillInput('headache')">headache</span>
+            <span class="tag" onclick="fillInput('anxious')">anxious</span>
+            <span class="tag" onclick="fillInput('I am stressed')">I am stressed</span>
+            <span class="tag" onclick="fillInput('happy')">happy</span>
+            <span class="tag" onclick="fillInput('feeling relaxed')">feeling relaxed</span>
+        </div>
+
+        <button type="submit">Run Analysis</button>
+    </form>
+
+    {% if prediction_text %}
+        <div class="result {% if is_stress %}stress{% else %}no-stress{% endif %}">
+            <span class="result-icon">{% if is_stress %}&#9888;{% else %}&#10003;{% endif %}</span>
+            {{ prediction_text }}
+        </div>
+    {% endif %}
+
+    <hr class="divider">
+    <p class="footer-note">Enter a single word or short phrase describing your current state.</p>
+</div>
+
+<script>
+function fillInput(text) {
+    document.getElementById('message').value = text;
+}
+</script>
+</body>
+</html>
