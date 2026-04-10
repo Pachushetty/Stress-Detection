@@ -1,4 +1,4 @@
-# 🧠 Stress Predictor (Flask)
+# 🧠 Stress Detection 
 A smart and interactive **Stress Detection web app** built using **Flask, HTML, CSS, and JavaScript**.  
 Detect stress levels from natural language input with a clean UI and instant feedback.
 
